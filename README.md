@@ -1,19 +1,3 @@
 # WheresMyPof
-Where's My Prof
 
-DAR
-
-ADR
-=======
-
-
-**NTK**
-
-EAZ
-
-KMI
-
-ERH
-
-vme
-
+WheresMyProf uses crowdsourced information to provide both professors and students an easy way to share schedule information.

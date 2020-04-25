@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="assets/fontawesome-free-5.12.1/css/all.css">
+    <link rel="stylesheet" href="mystyle.css">
 
 </head>
 

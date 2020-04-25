@@ -18,7 +18,8 @@
   <input type="submit">
 </form>
 
-<?php
+<!--
+        <?php
 
 
 
@@ -145,7 +146,8 @@ xml_parser_free($parser);
 
 
 ?>
-</p>
+-->
+
 </body>
 </html>
 
@@ -167,6 +169,5 @@ xml_parser_free($parser);
 
 
 
-<body>
-</html>
+
 

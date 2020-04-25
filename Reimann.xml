@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<info>
+    <semester>S2020</semester>
+    <fname>David</fname>
+    <lname>Reimann</lname>
+    <officebuilding>Put</building>
+    <room>252</room>
+</info>
+
 <schedule>
 
-    <semester>
-        Spring 2020
+    <officehours>
         <event>
-            <name>Office Hours</name>
             <day>2</day>
             <start>
                 <hour>14</hour>
@@ -14,16 +20,11 @@
                 <hour>15</hour>
                 <minute>30</minute>
             </stop>
-            <location>
-                <building>Putnam</building>
-                <room>252</room>
-            </location>
             <color>#0066ff</color>
             <interruptible>T</interruptible>
         </event>
 
         <event>
-            <name>Office Hours</name>
             <day>4</day>
             <start>
                 <hour>14</hour>
@@ -33,16 +34,11 @@
                 <hour>17</hour>
                 <minute>0</minute>
             </stop>
-            <location>
-                <building>Putnam</building>
-                <room>252</room>
-            </location>
             <color>#0066ff</color>
             <interruptible>T</interruptible>
         </event>
 
         <event>
-            <name>Office Hours</name>
             <day>5</day>
             <start>
                 <hour>14</hour>
@@ -52,14 +48,26 @@
                 <hour>15</hour>
                 <minute>0</minute>
             </stop>
-            <location>
-                <building>Putnam</building>
-                <room>252</room>
-            </location>
             <color>#0066ff</color>
             <interruptible>T</interruptible>
         </event>
 
-    </semester>
+    </officehours>
+
+    <classes>
+        <event>
+            <day></day>
+            <start>
+                <hour></hour>
+                <minute></minute>
+            </start>
+            <stop>
+                <hour></hour>
+                <minute></minute>
+            </stop>
+            <color></color>
+            <interruptible></interruptible>
+        </event>
+    </classes>
 
 </schedule>

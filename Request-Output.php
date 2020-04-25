@@ -13,7 +13,9 @@
         $prof_name = $_POST['professor'];
         $name_space = strpos($prof_name, " ");
         $prof_last_name = substr($prof_name, $name_space);
-        echo $prof_last_name;
+        $prof_file_name = $prof_last_name.".xml";
+
+        echo $prof_file_name;
     ?>
 </body>
 

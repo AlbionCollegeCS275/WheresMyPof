@@ -18,28 +18,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="assets/fontawesome-free-5.12.1/css/all.css">
 
-  <style>
-
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Lato", sans-serif
-    }
-
-    .w3-bar,
-    h1,
-    button {
-      font-family: "Montserrat", sans-serif
-    }
-
-  </style>
 </head>
 
 <body>
+
+<a href="Get-Request-QueryPage.php">Click here to find a prof</a>
 
   <!-- Footer -->
   <footer>

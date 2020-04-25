@@ -9,16 +9,14 @@
 <form action="Request-Output.php" method="post">
   <select name="professor">
     <option value="">Select an Option</option>
-    <option value="David Reimann">David Reimann</option>
-    <option value="Mark Bollman">Mark Bollman</option>
-    <option value="Ian MacKinnes">Ian MacKinnes</option>
-    <option value="Wesley Dick">Wesley Dick</option>
+    <option value="Reimann">David Reimann</option>
+    <option value="Bollman">Mark Bollman</option>
+    <option value="MacKinnes">Ian MacKinnes</option>
+    <option value="Dick">Wesley Dick</option>
   </select>
   <br><br>
   <input type="submit">
 </form>
-
-<h3>Your professor is:  <?php echo $_GET["professor"];?></h3>
 
 <?php
 

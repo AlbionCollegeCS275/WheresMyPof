@@ -13,7 +13,7 @@ echo "<h2>Form Submitted Successfully!! Bellow is the data</h2>";
 
 
 
-}
+
 
 
 

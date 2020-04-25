@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schedule>
+
+    <semester>
+        Spring 2020
+        <event>
+            <name>Office Hours</name>
+            <day>2</day>
+            <start>
+                <hour>10</hour>
+                <minute>30</minute>
+            </start>
+            <stop>
+                <hour>11</hour>
+                <minute>30</minute>
+            </stop>
+            <location>
+                <building>Vulgamore</building>
+                <room>311</room>
+            </location>
+            <color>#99ff33</color>
+            <interruptible>T</interruptible>
+        </event>
+
+        <event>
+            <name>Office Hours</name>
+            <day>4</day>
+            <start>
+                <hour>10</hour>
+                <minute>30</minute>
+            </start>
+            <stop>
+                <hour>11</hour>
+                <minute>30</minute>
+            </stop>
+            <location>
+                <building>Vulgamore</building>
+                <room>311</room>
+            </location>
+            <color>#99ff33</color>
+            <interruptible>T</interruptible>
+        </event>
+
+        <event>
+            <name>Office Hours</name>
+            <day>6</day>
+            <start>
+                <hour>10</hour>
+                <minute>30</minute>
+            </start>
+            <stop>
+                <hour>11</hour>
+                <minute>30</minute>
+            </stop>
+            <location>
+                <building>Vulgamore</building>
+                <room>311</room>
+            </location>
+            <color>#99ff33</color>
+            <interruptible>T</interruptible>
+        </event>
+    </semester>
+
+</schedule>

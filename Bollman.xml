@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schedule>
+
+    <semester>
+        Spring 2020
+        <event>
+            <name> Office Hours </name>
+            <day>2</day>
+            <start>
+                <hour>12</hour>
+                <minute>0</minute>
+            </start>
+            <stop>
+                <hour>13</hour>
+                <minute>0</minute>
+            </stop>
+            <location>
+                <building>Palenske</building>
+                <room>226</room>
+            </location>
+            <color>#ff0000</color>
+            <interruptible>T</interruptible>
+        </event>
+
+        <event>
+            <name> Office Hours </name>
+            <day>3</day>
+            <start>
+                <hour>15</hour>
+                <minute>0</minute>
+            </start>
+            <stop>
+                <hour>16</hour>
+                <minute>0</minute>
+            </stop>
+            <location>
+                <building>Palenske</building>
+                <room>226</room>
+            </location>
+            <color>#ff0000</color>
+            <interruptible>T</interruptible>
+        </event>
+
+        <event>
+            <name> Office Hours </name>
+            <day>5</day>
+            <start>
+                <hour>14</hour>
+                <minute>0</minute>
+            </start>
+            <stop>
+                <hour>15</hour>
+                <minute>0</minute>
+            </stop>
+            <location>
+                <building>Palenske</building>
+                <room>226</room>
+            </location>
+            <color>#ff0000</color>
+            <interruptible>T</interruptible>
+        </event>
+
+        <event>
+            <name> Office Hours </name>
+            <day>6</day>
+            <start>
+                <hour>10</hour>
+                <minute>30</minute>
+            </start>
+            <stop>
+                <hour>11</hour>
+                <minute>30</minute>
+            </stop>
+            <location>
+                <building>Palenske</building>
+                <room>226</room>
+            </location>
+            <color>#ff0000</color>
+            <interruptible>T</interruptible>
+        </event>
+
+     </semester>
+
+</schedule>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function getOption() {
+		var obj = document.getElementById("departments");
+		document.getElementById("result").innerHTML = 
+		obj.options[obj.selectedIndex].text;
+		
+		}
+	</script>
+</head>
+<body>
+
+<h1>WheresMyProf</h1>
+<p>Pick one of the search categories below to find the schedule you need.</p>
+
+
+<h2>Search by Department</h2>
+
+
+
+<form action="/action_page.php">
+	<label for="departments">Department</label>
+	
+	<select id="departments" name="departments">
+		<option value="art and art history">Art and Art History</option>
+		<option value="biology">Biology</option>
+		<option value="chemistry">Chemistry</option>
+		<option value="communication studies">Communication Studies</option>
+		<option value="economics and management">Economics and Management</option>
+		<option value="education">Education</option>
+		<option value="english">English</option>
+		<option value="ethnic studies">Ethnic Studies</option>
+		<option value="geological sciences">Geological Sciences</option>
+		<option value="history">History</option>
+		<option value="international studies">International Studies</option>
+		<option value="kinesiology">Kinesiology</option>
+		<option value="mathematics and computer science">Mathematics and Computer Science</option>
+		<option value="modern languages and culture">Modern Languages and Culture</option>
+		<option value="music">Music</option>
+		<option value="philosophy">Philosophy</option>
+		<option value="physics">Physics</option>
+		<option value="political science">Political Science</option>
+		<option value="psychological science">Psychological Science</option>
+		<option value="religious studies">Religious Studies</option>
+		<option value="theatre">Theatre</option>
+		<option value="women's, gender, and sexuality studies">Women's, Gender, and Sexuality Studies</option>
+	</select>
+	<input type="button" onclick="getOption()" value="Click Me!" name ="click button">
+
+
+</form>
+
+<p>You selected: <span id="result"></span> </p>
+
+
+
+
+
+</body>
+</html>

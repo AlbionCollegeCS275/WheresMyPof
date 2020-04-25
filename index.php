@@ -23,7 +23,8 @@
 
 <body>
 
-<a href="Get-Request-QueryPage.php">Click here to find a prof</a>
+<a class="navbar" href="Get-Request-QueryPage.php">Search for a Professor</a>
+<a class="navbar" href="Professor and Class Form.html">Professor Entry Form</a>
 
   <!-- Footer -->
   <footer>

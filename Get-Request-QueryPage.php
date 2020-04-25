@@ -4,16 +4,7 @@
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
     <body>
-    <p> Navigation:
-<ul>
-   <li> <a href="http://147.124.41.67/~afd11/index/">Website: afd11</a></li>
 
-   <li> <a href="http://147.124.41.67/~afd11/">Directory: afd11</a></li>
-    
-    <li><a href="http://147.124.41.67/">WheresMyProf Main Page</a></li>
-</ul>
-
-</p>
     <h1>Select a Professor</h1>
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
   <select name="professor">

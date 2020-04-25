@@ -6,7 +6,7 @@
     <body>
 
     <h1>Select a Professor</h1>
-<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
+<form action="Request-Output.php" method="post">
   <select name="professor">
     <option value="">Select an Option</option>
     <option value="David Reimann">David Reimann</option>

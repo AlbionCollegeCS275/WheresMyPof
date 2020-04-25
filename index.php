@@ -24,6 +24,7 @@
 <body>
 
 <a href="Get-Request-QueryPage.php">Click here to find a prof</a>
+<br>
 <a href="Professor and Class Form.html">Click here if you're a professor </a>
 
   <!-- Footer -->

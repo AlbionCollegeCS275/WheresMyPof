@@ -8,11 +8,27 @@
     h6 {
       font-family: "Lato", sans-serif;
       text-align: center;
-      
+
     }
 
     .w3-bar,
     h1,
     button {
       font-family: "Montserrat", sans-serif
+    }
+
+    a:link.navbar, a:visited.navbar {
+      background-color:  #9999ff;
+      color: black;
+      border: 2px solid black;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+
+    }
+
+    a:hover.navbar, a:active.navbar {
+      background-color: purple;
+      color: white;
     }

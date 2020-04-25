@@ -11,7 +11,7 @@
     <option value="">Select an Option</option>
     <option value="Reimann">David Reimann</option>
     <option value="Bollman">Mark Bollman</option>
-    <option value="MacKinnes">Ian MacKinnes</option>
+    <option value="MacInnes">Ian MacInnes</option>
     <option value="Dick">Wesley Dick</option>
   </select>
   <br><br>

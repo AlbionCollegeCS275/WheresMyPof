@@ -5,6 +5,7 @@
 
 
 
+
 </head>
 
 <body>
@@ -15,6 +16,11 @@
 
         echo $prof_file_name;
     ?>
+
+
+    <!--Navigation-->
+    <br>
+    <a href ="/index.php">Back to Home</a>
 </body>
 
 </html>

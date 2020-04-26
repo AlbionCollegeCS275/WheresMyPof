@@ -22,9 +22,32 @@
 </head>
 
 <body>
+  <div class="header">
+    <h1>WheresMyProf</h1>
+  </div>
 
 <a class="navbar" href="Get-Request-QueryPage.php">Search for a Professor</a>
 <a class="navbar" href="Professor and Class Form.html">Professor Entry Form</a>
+<div class="row">
+  <div class="column">
+    <h2>How To:</h2>
+    <p>If you're looking for a professor's office hours, click the <b>Search for a Professor</b> link. </p>
+    <p>If you are a professor looking to add your schedule information, click the <b>Professor Entry Form</b> link.</p>
+  </div>
+
+  <div class="column">
+    <h2>Welcome!</h2>
+    <p style="text-align:left">This page was developed by Albion College students in a Software Development Class. </p>
+  </div>
+
+  <div class="column">
+    <h2>Side Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+</div>
+
+
+
 
   <!-- Footer -->
   <footer>

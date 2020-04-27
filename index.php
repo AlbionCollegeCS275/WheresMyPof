@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Where's My Prof?</title>
+    <title>Where's My Prof?</title>
     <meta charset="UTF-8">
     <meta name="author" content="Noah Keck">
     <meta name="description" content="WheresMyProf uses crowdsourced information to provide both professors and students an easy way to share schedule information.">

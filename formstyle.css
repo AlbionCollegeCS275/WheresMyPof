@@ -55,35 +55,9 @@ button, label, input, select {
   /*font-family: inherit;*/
   font-size: 100%;
   padding: 5em;
-  margin: 0;
+  margin: 15px;
   box-sizing: border-box;
   width: 75%;
   padding: 5px;
   height: 30px;
-}
-
-  /*select {
-  box-shadow: inset 1px 1px 3px #ccc;
-  border-radius: 5px;
-}*/
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 15px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
-  .column {
-    width: 100%;
-  }
 }

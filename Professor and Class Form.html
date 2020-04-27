@@ -1,173 +1,287 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="assets/fontawesome-free-5.12.1/css/all.css">
+  <!--Stylesheet for w3schools CSS format-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
 <body>
-
-<h2>Professor and Course Form</h2>
-
-<p>Please provide the name of the professor who teaches the course.</p>
-<form action="/profschedule.php" method="post">
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"<br>
-
-<p>Please provide the location of the professor's office.</p>
-<label for="office">Office Building:</label>
-  <select id="office" name="officebuilding">
-  <option value="Bobbitt">Bobbitt Visual Arts Center</option>
-  <option value="Ferg"> Ferguson Hall</option>
-  <option value="Chapel"> Goodrich Chapel </option>
-  <option value="Theatre"> Herrick Theatre</option>
-  <option value="Olin">Olin Hall</option>
-  <option value="Pal"> Palenske Hall </option>
-  <option value="Put"> Putnam Hall </option>
-  <option value="Rob"> Robinson Hall</option>
-  <option value="Vulg">Vulgamore Hall</option>
-</select>
-
-  <label for="room#">Room Number:</label>
-  <input type="text" id="room" name="room#"<br>
-
-
-<p> Please provide the times of your open office hours. Each day has 2 sections. </p>
-<p>Please provide Monday office hours.</p>
-  <label for="MonOffStart">Start Time:</label>
-  <input type="time" id="start" name="MonOffStart">
-  <label for="MonOffEnd">End Time:</label>
-  <input type="time" id="end" name="MonOffEnd"><br>
-  <label for="MonOffStart">Start Time:</label>
-  <input type="time" id="start" name="MonOffStart">
-  <label for="MonOffEnd">End Time:</label>
-  <input type="time" id="end" name="MonOffEnd">
-<p>Please provide Tuesday office hours.</p>
-    <label for="TueOffStart">Start Time:</label>
-    <input type="time" id="start" name="TueOffStart">
-    <label for="TueOffEnd">End Time:</label>
-    <input type="time" id="end" name="TueOffEnd"><br>
-    <label for="TueOffStart">Start Time:</label>
-    <input type="time" id="start" name="TueOffStart">
-    <label for="TueOffEnd">End Time:</label>
-    <input type="time" id="end" name="TueOffEnd">
-<p>Please provide Wednesday office hours.</p>
-      <label for="WedOffStart">Start Time:</label>
-      <input type="time" id="start" name="WedOffStart">
-      <label for="WedOffEnd">End Time:</label>
-      <input type="time" id="end" name="WedOffEnd"><br>
-      <label for="WedOffStart">Start Time:</label>
-      <input type="time" id="start" name="WedOffStart">
-      <label for="WedOffEnd">End Time:</label>
-      <input type="time" id="end" name="WedOffEnd">
-<p>Please provide Thursday office hours.</p>
-        <label for="ThuOffStart">Start Time:</label>
-        <input type="time" id="start" name="ThuOffStart">
-        <label for="ThuOffEnd">End Time:</label>
-        <input type="time" id="end" name="ThuOffEnd"><br>
-        <label for="ThuOffStart">Start Time:</label>
-        <input type="time" id="start" name="ThuOffStart">
-        <label for="ThuOffEnd">End Time:</label>
-        <input type="time" id="end" name="ThuOffEnd">
-<p>Please provide Friday office hours.</p>
-          <label for="FriOffStart">Start Time:</label>
-          <input type="time" id="start" name="FriOffStart">
-          <label for="FriOffEnd">End Time:</label>
-          <input type="time" id="end" name="FriOffEnd"><br>
-          <label for="FriOffStart">Start Time:</label>
-          <input type="time" id="start" name="FriOffStart">
-          <label for="FriOffEnd">End Time:</label>
-          <input type="time" id="end" name="FriOffEnd">
+  <!--Header-->
+  <div class="w3-container w3-center w3-blue">
+    <h1>Professor and Course Form</h1>
+  </div>
 
 
 
+  <!--Professor Entry Form-------------------------------------->
+  <form class="w3-container" action="/profschedule.php" method="post">
+    <div class="w3-panel w3-light-blue">
+    <p>If you are a professor, please enter your information below.</p>
+    </div>
+<div class="w3-card-2 w3-container w3-padding w3-margin">
+      <div class="w3-row-padding">
+        <div class="w3-half w3-panel">
 
-<p>Please select the department of the class.</p>
-<label for="dept">Department:</label>
-  <select id="dept" name="dept">
-  <option value="Anthro">Anthropology</option>
-  <option value="Soc"> Sociology </option>
-  <option value="Art"> Art </option>
-  <option value="ArtHis">Art History</option>
-  <option value="Bio">Biology</option>
-  <option value="Chem"> Chemistry </option>
-  <option value="Comm"> Communication Studies </option>
-  <option value="CS"> Computer Science </option>
-  <option value="EM">Economics and Management</option>
-  <option value="Ed"> Education </option>
-  <option value="Eng"> English </option>
-  <option value="Ethnic"> Ethnic Studies </option>
-  <option value="Geo">Geological Studies</option>
-  <option value="His"> History </option>
-  <option value="IntStud"> International Studies </option>
-  <option value="Kin"> Kinesiology </option>
-  <option value="Math"> Mathematics </option>
-  <option value="MLAC">Modern Languages and Cultures</option>
-  <option value="Music"> Music </option>
-  <option value="Phil"> Philosophy </option>
-  <option value="Phys"> Physics </option>
-  <option value="PoliSci"> Political Science </option>
-  <option value="Psych"> Psychological Studies </option>
-  <option value="Relig"> Religious Studies </option>
-  <option value="Theatre">Theatre</option>
-  <option value="WomenGS">Women's Gender and Sexuality Studies</option>
-</select>
+          <!--First Name-->
+          <div class="w3-container">
+          <input class="w3-input w3-hover-border-blue"type="text" id="fname" name="fname">
+        </div>
 
-<p>Please provide the class name, along with course number.</p>
-  <label for="course#" Class:</label>
-  <input type="text" id="class" name="course#"<br>
+        <div class="w3-container">
+          <label  for="fname">First name</label>
+        </div>
+      </div>
+        <div class="w3-half w3-panel">
+          <!--Last Name-->
+          <div class="w3-container">
+          <input class ="w3-input w3-hover-border-blue" type="text" id="lname" name="lname">
+        </div>
+          <div class="w3-container">
+          <label for="lname">Last name</label>
+        </div>
+        </div>
+      </div>
 
-<p>Please select the days the class occurs. </p>
-  <input type="checkbox" id="day1" name="M" value="Monday">
-  <label for="Mon">Monday</label><br>
-  <input type="checkbox" id="day2" name="T" value="Tuesday">
-  <label for="Tues">Tuesday</label><br>
-  <input type="checkbox" id="day3" name="W" value="Wednesday">
-  <label for="Wed">Wednesday</label><br>
-  <input type="checkbox" id="day4" name="R" value="Thursday">
-  <label for="Thur">Thursday</label><br>
-  <input type="checkbox" id="day5" name="F" value="Friday">
-  <label for="Fri">Friday</label><br>
-
-
-
-<p>Ensure you choose the correct time for the correct days (some classes have different times for different days) and provide if AM or PM.
-
-You do not have to fill out a time for the days your class does not fall on. </p>
-
-
-<p>Please provide the start and end time of the Monday class.</p>
-  <label for="MonClassStart">Start Time:</label>
-  <input type="time" id="start" name="MonClassStart">
-  <label for="MonClassEnd">End Time:</label>
-  <input type="time" id="end" name="MonClassEnd">
-<p>Please provide the start and end time of the Tuesday class.</p>
-  <label for="TueClassStart">Start Time:</label>
-  <input type="time" id="start" name="TueClassStart">
-  <label for="TueClassEnd">End Time:</label>
-  <input type="time" id="end" name="TueClassEnd">
-<p>Please provide the start and end time of the Wednesday class.</p>
-  <label for="WedClassStart">Start Time:</label>
-  <input type="time" id="start" name="WedClassStart">
-  <label for="WedClassEnd">End Time:</label>
-  <input type="time" id="end" name="WedClassEnd">
-<p>Please provide the start and end time of the Thursday class.</p>
-  <label for="ThurClassStart">Start Time:</label>
-  <input type="time" id="start" name="ThurClassStart">
-  <label for="ThurClassEnd">End Time:</label>
-  <input type="time" id="end" name="ThurClassEnd">
-<p>Please provide the start and end time of the Friday class.</p>
-  <label for="FriClassStart">Start Time:</label>
-  <input type="time" id="start" name="FriClassStart">
-  <label for="FriClassEnd">End Time:</label>
-  <input type="time" id="end" name="FriClassEnd">
-
-<p> If the class has a webpage available, please provide the link. </p>
-  <label for="classlink">Course Link:</label>
-  <input type="url" id="classlink" name="classlink"><br><br><br><br>
+    <div class="w3-row-padding">
+      <div class="w3-third w3-panel">
+        <!--Department-->
+        <div class="w3-container">
+        <label for="dept">Department</label>
+      </div>
+      <div class="w3-container">
+        <select class="w3-select w3-border w3-hover-border-blue" id="dept" name="dept">
+          <option value="Anthro">Anthropology</option>
+          <option value="Soc"> Sociology </option>
+          <option value="Art"> Art </option>
+          <option value="ArtHis">Art History</option>
+          <option value="Bio">Biology</option>
+          <option value="Chem"> Chemistry </option>
+          <option value="Comm"> Communication Studies </option>
+          <option value="CS"> Computer Science </option>
+          <option value="EM">Economics and Management</option>
+          <option value="Ed"> Education </option>
+          <option value="Eng"> English </option>
+          <option value="Ethnic"> Ethnic Studies </option>
+          <option value="Geo">Geological Studies</option>
+          <option value="His"> History </option>
+          <option value="IntStud"> International Studies </option>
+          <option value="Kin"> Kinesiology </option>
+          <option value="Math"> Mathematics </option>
+          <option value="MLAC">Modern Languages and Cultures</option>
+          <option value="Music"> Music </option>
+          <option value="Phil"> Philosophy </option>
+          <option value="Phys"> Physics </option>
+          <option value="PoliSci"> Political Science </option>
+          <option value="Psych"> Psychological Studies </option>
+          <option value="Relig"> Religious Studies </option>
+          <option value="Theatre">Theatre</option>
+          <option value="WomenGS">Women's Gender and Sexuality Studies</option>
+        </select>
+      </div>
+    </div>
+      <div class="w3-third w3-panel">
 
 
-  <input type="submit" value="Submit">
+        <!--Office Building-->
+        <div class="w3-container">
+        <label for="office">Office Building</label>
+      </div>
+        <div class="w3-container">
+        <select class="w3-select w3-border w3-hover-border-blue" id="office" name="officebuilding">
+          <option value="" disabled selected>Choose Location</option>
+          <option value="Bobbitt">Bobbitt Visual Arts Center</option>
+          <option value="Ferg"> Ferguson Hall</option>
+          <option value="Chapel"> Goodrich Chapel </option>
+          <option value="Theatre"> Herrick Theatre</option>
+          <option value="Olin">Olin Hall</option>
+          <option value="Pal"> Palenske Hall </option>
+          <option value="Put"> Putnam Hall </option>
+          <option value="Rob"> Robinson Hall</option>
+          <option value="Vulg">Vulgamore Hall</option>
+        </select>
+      </div>
 
 
-</form>
+    </div>
+
+    <div class="w3-third w3-panel">
+    <!--Room Number-->
+      <div class="w3-container">
+      <input class="w3-input w3-border w3-hover-border-blue" type="text" id="room" name="room#">
+      <label for="room#">Room Number</label>
+    </div>
+    </div>
+
+
+
+</div>
+</div>
+
+
+    <!--Office Hours-->
+<div class="w3-panel w3-light-blue">
+    <p> Please provide the times of your open office hours. Each day has 2 sections.</p>
+  </div>
+
+    <!--Monday Office Hours-->
+
+      <h3>Monday Office Hours</h3>
+      <div class="w3-container w3-card-2 w3-padding w3-margin">
+      <label for="MonOffStart">Start Time:</label>
+      <input class="w3-input" type="time" id="start" name="MonOffStart">
+      <label for="MonOffEnd">End Time:</label>
+      <input class="w3-input" type="time" id="end" name="MonOffEnd"><br>
+
+
+      <label for="MonOffStart">Start Time:</label>
+      <input class="w3-input" type="time" id="start" name="MonOffStart">
+      <label for="MonOffEnd">End Time:</label>
+      <input class="w3-input" type="time" id="end" name="MonOffEnd">
+    </div>
+
+
+    <!--Tuesday Office Hours-->
+
+      <h3>Tuesday Office Hours</h3>
+<div class="w3-card-2 w3-container w3-padding w3-margin">
+      <label for="TueOffStart">Start Time:</label>
+      <input class="w3-input" type="time" id="start" name="TueOffStart">
+      <label for="TueOffEnd">End Time:</label>
+      <input class="w3-input" type="time" id="end" name="TueOffEnd"><br>
+      <label for="TueOffStart">Start Time:</label>
+      <input class="w3-input" type="time" id="start" name="TueOffStart">
+      <label for="TueOffEnd">End Time:</label>
+      <input class="w3-input" type="time" id="end" name="TueOffEnd">
+    </div>
+
+
+    <!--Wednesday Office Hours-->
+
+
+      <h3>Wednesday Office Hours</h3>
+<div class="w3-card-2 w3-container w3-padding w3-margin">
+        <label for="WedOffStart">Start Time:</label>
+        <input class="w3-input" type="time" id="start" name="WedOffStart">
+        <label for="WedOffEnd">End Time:</label>
+        <input class="w3-input" type="time" id="end" name="WedOffEnd"><br>
+        <label for="WedOffStart">Start Time:</label>
+        <input class="w3-input" type="time" id="start" name="WedOffStart">
+        <label for="WedOffEnd">End Time:</label>
+        <input class="w3-input" type="time" id="end" name="WedOffEnd">
+    </div>
+
+    <!--Thursday Office Hours-->
+
+  <h3>Thursday Office Hours</h3>
+  <div class="w3-card-2 w3-container w3-padding w3-margin">
+    <label for="ThuOffStart">Start Time:</label>
+    <input class="w3-input" type="time" id="start" name="ThuOffStart">
+    <label for="ThuOffEnd">End Time:</label>
+    <input class="w3-input" type="time" id="end" name="ThuOffEnd"><br>
+    <label for="ThuOffStart">Start Time:</label>
+    <input class="w3-input" type="time" id="start" name="ThuOffStart">
+    <label for="ThuOffEnd">End Time:</label>
+    <input class="w3-input" type="time" id="end" name="ThuOffEnd">
+  </div>
+
+    <!--Friday Office Hours-->
+
+    <h3>Friday Office Hours</h3>
+    <div class="w3-card-2 w3-container w3-padding w3-margin">
+    <label for="FriOffStart">Start Time:</label>
+    <input class="w3-input" type="time" id="start" name="FriOffStart">
+    <label for="FriOffEnd">End Time:</label>
+    <input class="w3-input" type="time" id="end" name="FriOffEnd"><br>
+    <label for="FriOffStart">Start Time:</label>
+    <input class="w3-input" type="time" id="start" name="FriOffStart">
+    <label for="FriOffEnd">End Time:</label>
+    <input class="w3-input" type="time" id="end" name="FriOffEnd">
+  </div>
+
+
+
+  <div class="w3-panel w3-light-blue">
+  <p>Course Information</p>
+  </div>
+    <!--Class Name and Course Number-->
+    <div class="w3-card-2 w3-container w3-padding w3-margin">
+    <label for="course#"> Course Name and Number</label>
+    <input class="w3-input"type="text" id="class" name="course#" placeholder="Example: CS 199">
+
+    <!--Class Days-->
+    <p>Please select the days the class occurs. </p>
+    <input type="checkbox" id="day1" name="M" value="Monday">
+    <label for="Mon">Monday</label><br>
+    <input type="checkbox" id="day2" name="T" value="Tuesday">
+    <label for="Tues">Tuesday</label><br>
+    <input type="checkbox" id="day3" name="W" value="Wednesday">
+    <label for="Wed">Wednesday</label><br>
+    <input type="checkbox" id="day4" name="R" value="Thursday">
+    <label for="Thur">Thursday</label><br>
+    <input type="checkbox" id="day5" name="F" value="Friday">
+    <label for="Fri">Friday</label><br>
+  </div>
+
+
+    <!--Class Times-->
+    <div class="w3-panel w3-light-blue">
+    <p>
+      Ensure you choose the correct time for the correct days (some classes
+      have different times for different days) and provide if AM or PM. You do
+      not have to fill out a time for the days your class does not fall on.
+    </p>
+  </div>
+
+    <!--Monday Class Times-->
+
+      <div class="w3-card-2 w3-container w3-padding w3-margin">
+    <p>Please provide the start and end time of the Monday class.</p>
+    <label for="MonClassStart">Start Time:</label>
+    <input type="time" id="start" name="MonClassStart">
+    <label for="MonClassEnd">End Time:</label>
+    <input type="time" id="end" name="MonClassEnd">
+  </div>
+
+    <!--Tuesday Class Times-->
+    <p>Please provide the start and end time of the Tuesday class.</p>
+    <label for="TueClassStart">Start Time:</label>
+    <input type="time" id="start" name="TueClassStart">
+    <label for="TueClassEnd">End Time:</label>
+    <input type="time" id="end" name="TueClassEnd">
+
+    <!--Wednesday Class Times-->
+    <p>Please provide the start and end time of the Wednesday class.</p>
+    <label for="WedClassStart">Start Time:</label>
+    <input type="time" id="start" name="WedClassStart">
+    <label for="WedClassEnd">End Time:</label>
+    <input type="time" id="end" name="WedClassEnd">
+
+    <!--Thursday Class Times-->
+    <p>Please provide the start and end time of the Thursday class.</p>
+    <label for="ThurClassStart">Start Time:</label>
+    <input type="time" id="start" name="ThurClassStart">
+    <label for="ThurClassEnd">End Time:</label>
+    <input type="time" id="end" name="ThurClassEnd">
+
+    <!--Friday Class Times-->
+    <p>Please provide the start and end time of the Friday class.</p>
+    <label for="FriClassStart">Start Time:</label>
+    <input type="time" id="start" name="FriClassStart">
+    <label for="FriClassEnd">End Time:</label>
+    <input type="time" id="end" name="FriClassEnd">
+
+    <!--Class WebPage Link-->
+    <p> If the class has a webpage available, please provide the link. </p>
+    <label for="classlink">Course Link:</label>
+    <input type="url" id="classlink" name="classlink"><br><br><br><br>
+
+    <!--Submit Form-->
+    <input type="submit" value="Submit" name="submit">
+
+  </form>
 
 </body>
 </html>

@@ -26,10 +26,14 @@
     <h1>Enter your verification code below</h1>
   </div>
 
-  <div style="padding-top: 30px; padding-bottom: 30px; width: 100px; margin: auto;">
-    <form id="verify">
-      <input type="text">
+  <div style="padding-top: 30px; padding-bottom: 30px; width: 200px; margin: auto;">
+    <form name="myForm" onsubmit="verify();">
+      <input name="code" type="text">
+      <input type="submit">
     </form>
+  </div>
+  <div style="padding-top: 30px; padding-bottom: 30px;">
+    <p id="verify"></p>
   </div>
 
 
@@ -48,11 +52,59 @@
     // Writes the copyright statement with the current year. Website was first deployed in March 2020
     document.getElementById("copyright").innerHTML = "Copyright " + new Date().getFullYear() + " - All Rights Reserved";
 
+    // Check verification code
+    function verify(){
+      if (document.forms["myForm"]["code"].value === "123456"){
+        document.getElementById("verify").innerHTML = "Verification complete!";
+      }
+      else{
+        document.getElementById("verify").innerHTML = "Incorrect code.";
+      }
+    }
   </script>
 
   <?php
-    
-   ?>
+    // Import PHPMailer classes into the global namespace
+    // These must be at the top of your script, not inside a function
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\SMTP;
+    use PHPMailer\PHPMailer\Exception;
+
+    require 'C:/Program Files/PHP/php-7.4.5/includes/PHPMailer/src/Exception.php';
+    require 'C:/Program Files/PHP/php-7.4.5/includes/PHPMailer/src/PHPMailer.php';
+    require 'C:/Program Files/PHP/php-7.4.5/includes/PHPMailer/src/SMTP.php';
+
+    // Instantiation and passing `true` enables exceptions
+    $mail = new PHPMailer(true);
+
+    try {
+      //Server settings
+      $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
+      $mail->isSMTP();                                            // Send using SMTP
+      $mail->Host       = 'smtp.gmail.com';                       // Set the SMTP server to send through
+      $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+      $mail->Username   = 'joesmhoe135@gmail.com';                // SMTP username
+      $mail->Password   = 'Badpassword1!';                        // SMTP password
+      $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+      $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+
+      //Recipients
+      $mail->setFrom('joesmhoe135@gmail.com', 'Mailer');
+      //$mail->addAddress('joe@example.net', 'Joe User');         // Add a recipient
+      $mail->addAddress('noahkeck@mindspring.com');               // Name is optional
+
+      // Content
+      $mail->isHTML(true);                                        // Set email format to HTML
+      $mail->Subject = 'WheresMyProf Account Verification';
+      $mail->Body    = '<html><h1>WheresMyProf Verification Code</h1><p>Enter the verification code below to activate your account.</p><p>123456</p></html>';
+      $mail->AltBody = 'Enter code: 123456';
+
+      $mail->send();
+      echo 'Message has been sent';
+    } catch (Exception $e) {
+      echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    }
+  ?>
 
 </body>
 

@@ -26,7 +26,7 @@
     <h1>WheresMyProf</h1>
   </div>
 
-<a class="navbar" href="Get-Request-QueryPage.php">Search for a Professor</a>
+<a class="navbar" href="Student-Query.php">Search for a Professor</a>
 <a class="navbar" href="Professor and Class Form.html">Professor Entry Form</a>
 <div class="row">
   <div class="column">
@@ -42,7 +42,7 @@
 
   <div class="column">
     <h2>Side Column</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    <p>This is where the side column content will be.</p>
   </div>
 </div>
 

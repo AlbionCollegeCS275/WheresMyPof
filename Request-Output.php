@@ -23,10 +23,39 @@
         echo "<p> Office: "  . $xml->info->officebuilding . " " . $xml->info->room . "<br></p>";
         echo "<br><br>";
 
+
         //Output office hour times
         echo "Office Hours: <br>";
         foreach($xml->schedule->officehours->children() as $events) {
-          echo $events->day . ": ";
+          $weekday = $events->day;
+
+          switch($weekday){
+            case "0":
+              echo "Saturday ";
+              break;
+            case '1':
+              echo "Sunday ";
+              break;
+            case '2':
+                echo "Monday ";
+                break;
+            case '3':
+                echo "Tuesday ";
+                break;
+            case '4':
+              echo "Wednesday ";
+              break;
+            case '5':
+              echo "Thursday ";
+              break;
+            case '6':
+              echo "Friday ";
+              break;
+            default:
+              echo "Weekday N/A ";
+
+          }
+
           echo $events->start->hour . ":" . $events->start->minute;
           echo " - " . $events->stop->hour . ":" . $events->stop->minute;
           echo "<br>";
@@ -38,7 +67,7 @@
     <!--Navigation-->
     <br>
     <a href ="/index.php">Back to Home</a>
-    
+
 </body>
 
 </html>

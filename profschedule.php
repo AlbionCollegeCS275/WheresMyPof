@@ -20,7 +20,7 @@ echo "<h2>Form Submitted Successfully! Below is the data</h2>";
       $txt = "<root>";
       fwrite($file, $txt);
 
-      fclose($myfile);
+      fclose($file);
 
    }
 

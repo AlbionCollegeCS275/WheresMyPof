@@ -18,7 +18,7 @@ echo "<h2>Form Submitted Successfully! Below is the data</h2>";
       $txt = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
       fwrite($file, $txt);
       $txt = "<root>";
-      fwrite($myfile, $txt);
+      fwrite($file, $txt);
 
       fclose($myfile);
 

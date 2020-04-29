@@ -43,7 +43,11 @@
 
   <div class="column">
     <h2>Side Column</h2>
-    <p>This is where the side column content will be.</p>
+    <ul>
+      <li><a href="HowToUseStudents.html">How to for students</a> </li>
+      <li><a href="HowToUseFaculty.html">How to for faculty</a></li>
+    </ul>
+
   </div>
 </div>
 

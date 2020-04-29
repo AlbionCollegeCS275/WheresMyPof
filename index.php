@@ -32,8 +32,8 @@
 <div class="row">
   <div class="column">
     <h2>How To:</h2>
-    <p>If you're looking for a professor's office hours, click the <b>Search for a Professor</b> link. </p>
-    <p>If you are a professor looking to add your schedule information, click the <b>Professor Entry Form</b> link.</p>
+    <p style="text-align:left">If you're looking for a professor's office hours, click the <b>Search for a Professor</b> link. </p>
+    <p style="text-align:left">If you are a professor looking to add your schedule information, click the <b>Professor Entry Form</b> link.</p>
   </div>
 
   <div class="column">
@@ -42,7 +42,7 @@
   </div>
 
   <div class="column">
-    <h2>Side Column</h2>
+    <h2>Documentation</h2>
     <ul>
       <li><a href="HowToUseStudents.html">How to for students</a> </li>
       <li><a href="HowToUseFaculty.html">How to for faculty</a></li>

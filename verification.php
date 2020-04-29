@@ -27,7 +27,7 @@
   </div>
 
   <div style="padding-top: 30px; padding-bottom: 30px; width: 200px; margin: auto;">
-    <form name="myForm" onsubmit="verify();">
+    <form name="myForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
       <input name="code" type="text">
       <input type="submit">
     </form>
@@ -35,24 +35,6 @@
   <div style="padding-top: 30px; padding-bottom: 30px;">
     <p id="verify"></p>
   </div>
-
-
-
-
-  <!-- Footer -->
-  <footer>
-    <div>
-      <p id="copyright"></p>
-      <p><a href="tos.html">Terms of Service</a> - <a href="privacy.html">Privacy Policy</a></p>
-    </div>
-  </footer>
-
-  <script>
-
-    // Writes the copyright statement with the current year. Website was first deployed in March 2020
-    document.getElementById("copyright").innerHTML = "Copyright " + new Date().getFullYear() + " - All Rights Reserved";
-
-  </script>
 
   <?php
     // Import PHPMailer classes into the global namespace
@@ -65,43 +47,99 @@
     require 'C:/Program Files/PHP/php-7.4.5/includes/PHPMailer/src/PHPMailer.php';
     require 'C:/Program Files/PHP/php-7.4.5/includes/PHPMailer/src/SMTP.php';
 
-    // Instantiation and passing `true` enables exceptions
-    $mail = new PHPMailer(true);
+    $code = "";
 
-    try {
-      //Server settings
-      $mail->SMTPOptions = array(                                 // Required options to allow insecure SSL
-        'ssl' => array(
-          'verify_peer' => false,
-          'verify_peer_name' => false,
-          'allow_self_signed' => true
-        )
-      );
-      //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output, comment for production
-      $mail->isSMTP();                                            // Send using SMTP
-      $mail->Host       = 'smtp.gmail.com';                       // Set the SMTP server to send through
-      $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-      $mail->Username   = 'joesmhoe135@gmail.com';                // SMTP username
-      $mail->Password   = '********';                        // SMTP password
-      $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-      $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    //$secretcode = "123456";
+    //$secretcode = strval(mt_rand(100000,999999));
 
-      //Recipients
-      $mail->setFrom('joesmhoe135@gmail.com', 'WheresMyProf');
-      $mail->addAddress('noahkeck@mindspring.com', 'Noah Keck');  // Name is optional
+    // First see if this page include POST requests. If yes, validate code. If not, send verification email.
 
-      // Content
-      $mail->isHTML(true);                                        // Set email format to HTML
-      $mail->Subject = 'WheresMyProf Account Verification';
-      $mail->Body    = '<html><h1>WheresMyProf Verification Code</h1><p>Enter the verification code below to activate your account.</p><p>123456</p></html>';
-      $mail->AltBody = 'Enter code: 123456';
-
-      $mail->send();                                            // Uncomment for production
-      echo 'Message has been sent';
-    } catch (Exception $e) {
-      echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+      $code = test_input($_POST["code"]);
     }
+    else{
+      $secretcode = strval(mt_rand(100000,999999));
+      $myfile = fopen("code.txt", "w");
+      fwrite($myfile, $secretcode);
+      fclose($myfile);
+
+      // Instantiation and passing `true` enables exceptions
+      $mail = new PHPMailer(true);
+
+      try {
+        //Server settings
+        $mail->SMTPOptions = array(                                 // Required options to allow insecure SSL
+          'ssl' => array(
+            'verify_peer' => false,
+            'verify_peer_name' => false,
+            'allow_self_signed' => true
+          )
+        );
+        //Enable SMTP debugging
+        // SMTP::DEBUG_OFF = off (for production use)
+        // SMTP::DEBUG_CLIENT = client messages
+        // SMTP::DEBUG_SERVER = client and server messages
+        $mail->SMTPDebug = SMTP::DEBUG_OFF;
+        $mail->isSMTP();                                            // Send using SMTP
+        $mail->Host       = 'smtp.gmail.com';                       // Set the SMTP server to send through
+        $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+        $mail->Username   = 'joesmhoe135@gmail.com';                // SMTP username
+        $mail->Password   = '********';                        // SMTP password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+        $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+
+        //Recipients
+        $mail->setFrom('joesmhoe135@gmail.com', 'WheresMyProf');
+        $mail->addAddress('noahkeck@mindspring.com', 'Noah Keck');  // Name is optional
+
+        // Content
+        $mail->isHTML(true);                                        // Set email format to HTML
+        $mail->Subject = 'WheresMyProf Account Verification';
+        $mail->Body    = "<html><h1>WheresMyProf Verification Code</h1><p>Enter the verification code below to activate your account.</p><p>{$secretcode}</p></html>";
+        $mail->AltBody = "Enter code: {$secretcode}";
+
+        $mail->send();                                            // Uncomment for production
+        echo "Verification email has been sent.";
+      } catch (Exception $e) {
+        echo "Verification email could not be sent. Mailer Error: {$mail->ErrorInfo}";
+      }
+    }
+
+    // Form Validation function
+    function test_input($data) {
+      $data = trim($data);
+      $data = stripslashes($data);
+      $data = htmlspecialchars($data);
+      return $data;
+    }
+
+    $myfile = fopen("code.txt", "r");
+    $secretcode = fread($myfile,filesize("code.txt"));
+    fclose($myfile);
+
+    if ($code == $secretcode){
+      echo "Validated!";
+    }
+    else if ($code != ""){
+      echo "Code is invalid.";
+    }
+
   ?>
+
+  <!-- Footer -->
+  <footer style="padding-top: 100px">
+    <div>
+      <p id="copyright"></p>
+      <p><a href="tos.html">Terms of Service</a> - <a href="privacy.html">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <script>
+
+    // Writes the copyright statement with the current year. Website was first deployed in March 2020
+    document.getElementById("copyright").innerHTML = "Copyright " + new Date().getFullYear() + " - All Rights Reserved";
+
+  </script>
 
 </body>
 

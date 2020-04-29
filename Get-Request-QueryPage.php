@@ -18,7 +18,7 @@
   <input type="submit">
 </form>
 
-<!--
+
         <?php
 
 
@@ -66,8 +66,8 @@ function start($parser, $element_name, $element_attrs){
             echo "Building: ";
 
     }
-    
-    
+
+
 }
 
 //Function to use at end of element
@@ -106,17 +106,17 @@ function stop($parser, $element_name){
         case("BUILDING"):
             echo "<br>";
     }
-    
+
 }
 
 //Function to use when finding character data
 function char($parser, $data){
-    
+
         {echo chop($data, " ");}
-        
-   
-    
-    
+
+
+
+
 }
 
 //Specify element handler
@@ -133,7 +133,7 @@ $fp=fopen("prof1.xml", "r");
 
 //Read data
 while ($data=fread($fp, filesize("prof1.xml"))) {
-    xml_parse($parser, $data, feof($fp)) or die (sprintf("XML Error: %s at line %d", 
+    xml_parse($parser, $data, feof($fp)) or die (sprintf("XML Error: %s at line %d",
     xml_error_string(xml_get_error_code($parser)),
     xml_get_current_line_number($parser)));
 
@@ -146,28 +146,6 @@ xml_parser_free($parser);
 
 
 ?>
--->
 
 </body>
 </html>
-
-
-
-
-
-  
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-

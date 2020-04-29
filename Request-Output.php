@@ -18,7 +18,7 @@
         $prof_file_name = strval($prof_last_name.".xml");
 
         //Read XML file
-        $xml=simplexml_load_file($prof_file_name) or die("Error: Cannot create object");
+        $xml=simplexml_load_file($prof_file_name) or die("Professor has not provided information yet");
 
         //Output Professor Name and Office Location
         echo "<h3>" . $xml->info->fname . " " . $xml->info->lname."<br></h3>";

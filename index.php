@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <div class="header">
+  <div class="padding albion-purple">
     <h1>WheresMyProf</h1>
   </div>
 
@@ -35,11 +35,17 @@
     <p style="text-align:left">If you're looking for a professor's office hours, click the <b>Search for a Professor</b> link. </p>
     <p style="text-align:left">If you are a professor looking to add your schedule information, click the <b>Professor Entry Form</b> link.</p>
   </div>
+  <div class="albion-text-purple row">
+    <div class="column">
+      <h2>How To:</h2>
+      <p>If you're looking for a professor's office hours, click the <b>Search for a Professor</b> link.</p>
+      <p>If you are a professor looking to add your schedule information, click the <b>Professor Entry Form</b> link.</p>
+    </div>
 
-  <div class="column">
-    <h2>Welcome!</h2>
-    <p style="text-align:left">This page was developed by Albion College students in a Software Development Class. </p>
-  </div>
+    <div class="column">
+      <h2>Welcome!</h2>
+      <p style="text-align:left">This page was developed by Albion College students in a Software Development Class. </p>
+    </div>
 
   <div class="column">
     <h2>Documentation</h2>
@@ -50,23 +56,19 @@
     </ul>
 
   </div>
-</div>
-
-
-
 
   <!-- Footer -->
   <footer>
     <div>
-      <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
-      <a href="https://snapchat.com/"><i class="fab fa-snapchat"></i></a>
-      <a href="https://pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
-      <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/in/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/"><i class="albion-text-purple xlarge fab fa-facebook-f hover-opacity"></i></a>
+      <a href="https://instagram.com/"><i class="albion-text-purple xlarge fab fa-instagram hover-opacity"></i></a>
+      <a href="https://snapchat.com/"><i class="albion-text-purple xlarge fab fa-snapchat hover-opacity"></i></a>
+      <a href="https://pinterest.com/"><i class="albion-text-purple xlarge fab fa-pinterest-p hover-opacity"></i></a>
+      <a href="https://twitter.com/"><i class="albion-text-purple xlarge fab fa-twitter hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/in/"><i class="albion-text-purple xlarge fab fa-linkedin hover-opacity"></i></a>
     </div>
-    <p id="copyright"></p>
-    <p><a href="tos.html">Terms of Service</a> - <a href="privacy.html">Privacy Policy</a></p>
+    <p class="albion-text-purple" id="copyright"></p>
+    <p><a class="hover-opacity" href="tos.html">Terms of Service</a> - <a class="hover-opacity" href="privacy.html">Privacy Policy</a></p>
   </footer>
 
   <script>

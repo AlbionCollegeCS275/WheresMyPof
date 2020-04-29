@@ -2,35 +2,74 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
-
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
 
 </head>
 
 <body>
-    <h1>You're here</h1>
-    
+
     <?php
-        session_start();
+        //Receive information from Student Query Page (POST Request)
         $prof_name = $_POST['professor'];
         $name_space = strpos($prof_name, " ");
         $prof_last_name = substr($prof_name, $name_space);
         $prof_file_name = strval($prof_last_name.".xml");
 
-        echo $prof_file_name;
+        //Read XML file
+        $xml=simplexml_load_file($prof_file_name) or die("Error: Cannot create object");
 
-        $_SESSION['filename'] = $prof_file_name;
+        //Output Professor Name and Office Location
+        echo "<h3>" . $xml->info->fname . " " . $xml->info->lname."<br></h3>";
+        echo "<p> Office: "  . $xml->info->officebuilding . " " . $xml->info->room . "<br></p>";
+        echo "<br><br>";
 
-        include 'test.php';
 
-        echo $_SESSION['xml'];
-    ?>
+        //Output office hour times
+        echo "Office Hours: <br>";
+        foreach($xml->schedule->officehours->children() as $events) {
+          $weekday = $events->day;
+
+          switch($weekday){
+            case "0":
+              echo "Saturday ";
+              break;
+            case '1':
+              echo "Sunday ";
+              break;
+            case '2':
+                echo "Monday ";
+                break;
+            case '3':
+                echo "Tuesday ";
+                break;
+            case '4':
+              echo "Wednesday ";
+              break;
+            case '5':
+              echo "Thursday ";
+              break;
+            case '6':
+              echo "Friday ";
+              break;
+            default:
+              echo "Weekday N/A ";
+
+          }
+
+          echo $events->start->hour . ":" . $events->start->minute;
+          echo " - " . $events->stop->hour . ":" . $events->stop->minute;
+          echo "<br>";
+        }
+
+      ?>
 
 
     <!--Navigation-->
     <br>
     <a href ="/index.php">Back to Home</a>
+
 </body>
 
 </html>

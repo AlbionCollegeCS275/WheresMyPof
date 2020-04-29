@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<root>
 <info>
     <semester>S2020</semester>
     <fname>David</fname>
     <lname>Reimann</lname>
-    <officebuilding>Put</building>
+    <officebuilding>Put</officebuilding>
     <room>252</room>
 </info>
 
@@ -32,7 +33,7 @@
             </start>
             <stop>
                 <hour>17</hour>
-                <minute>0</minute>
+                <minute>00</minute>
             </stop>
             <color>#0066ff</color>
             <interruptible>T</interruptible>
@@ -46,7 +47,7 @@
             </start>
             <stop>
                 <hour>15</hour>
-                <minute>0</minute>
+                <minute>00</minute>
             </stop>
             <color>#0066ff</color>
             <interruptible>T</interruptible>
@@ -71,3 +72,4 @@
     </classes>
 
 </schedule>
+</root>

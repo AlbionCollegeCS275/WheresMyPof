@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<root>
 <info>
     <semester>S2020</semester>
     <fname>Wesley</fname>
     <lname>Dick</lname>
-    <officebuilding>Rob</building>
+    <officebuilding>Rob</officebuilding>
     <room>213</room>
 </info>
 
@@ -18,7 +19,7 @@
             </start>
             <stop>
                 <hour>17</hour>
-                <minute>0</minute>
+                <minute>00</minute>
             </stop>
             <color>#ffff00</color>
             <interruptible>T</interruptible>
@@ -32,7 +33,7 @@
             </start>
             <stop>
                 <hour>17</hour>
-                <minute>0</minute>
+                <minute>00</minute>
             </stop>
             <color>#ffff00</color>
             <interruptible>T</interruptible>
@@ -42,11 +43,11 @@
             <day>4</day>
             <start>
                 <hour>11</hour>
-                <minute>0</minute>
+                <minute>00</minute>
             </start>
             <stop>
                 <hour>12</hour>
-                <minute>0</minute>
+                <minute>00</minute>
             </stop>
             <color>#ffff00</color>
             <interruptible>T</interruptible>
@@ -71,3 +72,4 @@
     </classes>
 
 </schedule>
+</root>

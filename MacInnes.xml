@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<root>
 <info>
     <semester>S2020</semester>
     <fname>Ian</fname>
     <lname>MacInnes</lname>
-    <officebuilding>Vulg</building>
+    <officebuilding>Vulg</officebuilding>
     <room>311</room>
 </info>
 
@@ -70,3 +71,4 @@
     </classes>
 
 </schedule>
+</root>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<root>
 <info>
     <semester>S2020</semester>
     <fname>Mark</fname>
     <lname>Bollman</lname>
-    <officebuilding>Pal</building>
+    <officebuilding>Pal</officebuilding>
     <room>226</room>
 </info>
 
@@ -14,11 +15,11 @@
             <day>2</day>
             <start>
                 <hour>12</hour>
-                <minute>0</minute>
+                <minute>00</minute>
             </start>
             <stop>
                 <hour>13</hour>
-                <minute>0</minute>
+                <minute>00</minute>
             </stop>
             <color>#ff0000</color>
             <interruptible>T</interruptible>
@@ -28,11 +29,11 @@
             <day>3</day>
             <start>
                 <hour>15</hour>
-                <minute>0</minute>
+                <minute>00</minute>
             </start>
             <stop>
                 <hour>16</hour>
-                <minute>0</minute>
+                <minute>00</minute>
             </stop>
             <color>#ff0000</color>
             <interruptible>T</interruptible>
@@ -42,11 +43,11 @@
             <day>5</day>
             <start>
                 <hour>14</hour>
-                <minute>0</minute>
+                <minute>00</minute>
             </start>
             <stop>
                 <hour>15</hour>
-                <minute>0</minute>
+                <minute>00</minute>
             </stop>
             <color>#ff0000</color>
             <interruptible>T</interruptible>
@@ -85,3 +86,4 @@
     </classes>
 
 </schedule>
+</root>

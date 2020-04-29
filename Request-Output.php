@@ -22,6 +22,91 @@
 
         //Output Professor Name and Office Location
         echo "<h3>" . $xml->info->fname . " " . $xml->info->lname."<br></h3>";
+        $prof_dept;
+
+        switch($xml->info->department){
+          case("Anthro"):
+            $prof_dept = "Anthropology";
+            break;
+          case("Soc"):
+            $prof_dept = "Sociology";
+            break;
+          case("Art"):
+            $prof_dept = "Art";
+            break;
+          case("ArtHis"):
+            $prof_dept = "Art History";
+            break;
+          case("Bio"):
+            $prof_dept = "Biology";
+            break;
+          case("Chem"):
+            $prof_dept = "Chemistry";
+            break;
+          case("Comm"):
+            $prof_dept = "Communication Studies";
+            break;
+          case("CS"):
+            $prof_dept = "Computer Science";
+            break;
+          case("EM"):
+            $prof_dept = "Economics and Management";
+            break;
+          case("Ed"):
+            $prof_dept = "Education";
+            break;
+          case("Eng"):
+            $prof_dept = "English";
+            break;
+          case("Ethnic"):
+            $prof_dept = "Ethnic Studies";
+            break;
+            case("Geo"):
+            $prof_dept = "Geology";
+            break;
+          case("His"):
+            $prof_dept = "History";
+            break;
+          case("IntStud"):
+            $prof_dept = "International Studies";
+            break;
+          case("Kin"):
+            $prof_dept = "Kinesiology";
+            break;
+          case("Math"):
+            $prof_dept = "Mathematics";
+            break;
+          case("MLAC"):
+            $prof_dept = "Modern Languages and Cultures";
+            break;
+          case("Music"):
+            $prof_dept = "Music";
+            break;
+          case("Phil"):
+            $prof_dept = "Philosophy";
+            break;
+          case("Physics"):
+            $prof_dept = "Physics";
+            break;
+          case("PoliSci"):
+            $prof_dept = "Political Science";
+            break;
+          case("Psych"):
+            $prof_dept = "Psychological Studies";
+            break;
+          case("Relig"):
+            $prof_dept = "Religious Studies";
+            break;
+          case("Theatre"):
+            $prof_dept = "Theatre";
+            break;
+          case("WomenGS"):
+            $prof_dept = "Women's Gender and Sexuality Studies";
+            break;
+        }
+        
+        echo "<p>Department: ".$prof_dept."</p>";
+
         $prof_office;
         switch($xml->info->officebuilding) {
           case("Put"):

@@ -25,15 +25,10 @@
   <div class="padding albion-purple">
     <h1>WheresMyProf</h1>
   </div>
-
-<a class="navbar" href="Student-Query.php">Search for a Professor</a>
-<a class="navbar" href="Professor and Class Form.html">Professor Entry Form</a>
-<a class="navbar" href="verification.php">Verify Email</a>
-<div class="row">
-  <div class="column">
-    <h2>How To:</h2>
-    <p style="text-align:left">If you're looking for a professor's office hours, click the <b>Search for a Professor</b> link. </p>
-    <p style="text-align:left">If you are a professor looking to add your schedule information, click the <b>Professor Entry Form</b> link.</p>
+  <div class="padding-header">
+    <a class="albion-purple hover-albion-gold navbar" href="Student-Query.php">Search for a Professor</a>
+    <a class="albion-purple hover-albion-gold navbar" href="Professor and Class Form.html">Professor Entry Form</a>
+    <a class="albion-purple hover-albion-gold navbar" href="verification.php">Verify Email</a>
   </div>
   <div class="padding">
     <div class="albion-text-purple row">
@@ -55,20 +50,6 @@
         </ul>
       </div>
     </div>
-
-    <div class="column">
-      <h2>Welcome!</h2>
-      <p style="text-align:left">This page was developed by Albion College students in a Software Development Class. </p>
-    </div>
-
-  <div class="column">
-    <h2>Documentation</h2>
-    <ul>
-      <li><a href="HowToUseStudents.html">How to for students</a> </li>
-      <li><a href="HowToUseFaculty.html">How to for faculty</a></li>
-      <li><a href="ProjectOverview.html">Project Overview</a></li>
-    </ul>
-
   </div>
 
   <!-- Footer -->

@@ -10,7 +10,7 @@ echo "<h2>Form Submitted Successfully! Below is the data</h2>";
       echo "Your Name: {$_POST['lname']}";
       echo "<br>Office Location: {$_POST['officebuilding']}";
       echo "<hr>";
-      $lname = {$_POST['lname']};
+      $lname = $_POST['lname'];
       $file_name = $lname . "xml";
 
 
@@ -19,7 +19,7 @@ echo "<h2>Form Submitted Successfully! Below is the data</h2>";
       fwrite($file, $txt);
       $txt = "<root>";
       fwrite($myfile, $txt);
-      
+
       fclose($myfile);
 
    }

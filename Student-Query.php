@@ -12,8 +12,15 @@
     <option value="">Select an Option</option>
     <option value="Reimann">David Reimann</option>
     <option value="Bollman">Mark Bollman</option>
-    <option value="Macinnes">Ian Macinnes</option>
+    <option value="MacInnes">Ian MacInnes</option>
     <option value="Dick">Wesley Dick</option>
+    <option value="Anderson">Paul Anderson</option>
+    <option value="Mason">Darren Mason</option>
+    <option value="Dickson">Michael Dickson</option>
+    <option value="Sacks">Marcy Sacks</option>
+    <option value="Voss">Philip Voss</option>
+    <option value="Webb">Meghan Webb</option>
+    <option value="McCavit">Carla McCavit</option>
   </select>
   <br><br>
   <input class="w3-submit" type="submit">

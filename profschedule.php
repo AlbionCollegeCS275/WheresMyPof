@@ -11,7 +11,7 @@ echo "<h2>Form Submitted Successfully! Below is the data</h2>";
       echo "<br>Office Location: {$_POST['officebuilding']}";
       echo "<hr>";
       $lname = $_POST['lname'];
-      $file_name = $lname . "xml";
+      $file_name = $lname . ".xml";
 
 
       $file = fopen($file_name, "w") or die("Unable to open file!");

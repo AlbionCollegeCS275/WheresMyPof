@@ -25,7 +25,7 @@
         $prof_office;
         switch($xml->info->officebuilding) {
           case("Put"):
-            $prof_office = "Putnam";
+            $prof_office = "Putnam Hall";
             break;
           case("Chapel"):
             $prof_office = "Goodrich Chapel";

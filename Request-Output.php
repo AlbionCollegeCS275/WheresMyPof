@@ -22,7 +22,37 @@
 
         //Output Professor Name and Office Location
         echo "<h3>" . $xml->info->fname . " " . $xml->info->lname."<br></h3>";
-        echo "<p> Office: "  . $xml->info->officebuilding . " " . $xml->info->room . "<br></p>";
+        $prof_office;
+        switch($xml->info->officebuilding) {
+          case("Put"):
+            $prof_office = "Putnam";
+            break;
+          case("Chapel"):
+            $prof_office = "Goodrich Chapel";
+            break;
+          case("Bobbitt"):
+            $prof_office = "Bobbitt Visual Arts Center";
+            break;
+          case("Ferg"):
+            $prof_office = "Ferguson Hall";
+            break;
+          case("Theatre"):
+            $prof_office = "Herrick Theatre";
+            break;
+          case("Olin"):
+            $prof_office = "Olin Hall";
+            break;
+          case("Pal"):
+            $prof_office = "Palenske Hall";
+            break;
+          case("Rob"):
+            $prof_office = "Robinson Hall";
+            break;
+          case("Vulg"):
+            $prof_office = "Vulgamore Hall";
+            break;
+        }
+        echo "<p> Office: "  . $prof_office . " " . $xml->info->room . "<br></p>";
         echo "<br><br>";
 
 

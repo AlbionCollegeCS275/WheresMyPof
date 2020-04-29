@@ -37,18 +37,107 @@
 
     }
 
-    a:hover.navbar, a:active.navbar {
-      background-color: purple;
-      color: white;
-    }
-
     select {
       -webkit-appearance: none;
       appearance: none;
 
     }
 
+    .opacity, .hover-opacity:hover {
+      opacity: 0.60
+    }
 
+    .opacity-off, .hover-opacity-off:hover {
+      opacity: 1
+    }
+
+    .albion-purple, .hover-albion-purple:hover {
+      color: #fff !important;
+      background-color: #592041 !important
+    }
+
+    .albion-gold, .hover-albion-gold:hover {
+      color: #fff !important;
+      background-color: #d69d00 !important
+    }
+
+    .albion-text-purple, .hover-albion-text-purple:hover {
+      color: #592041 !important
+    }
+
+    .albion-text-gold, .hover-albion-text-gold:hover {
+      color: #d69d00 !important
+    }
+
+    .tiny {
+      font-size: 10px !important
+    }
+
+    .small {
+      font-size: 12px !important
+    }
+
+    .medium {
+      font-size: 15px !important
+    }
+
+    .large {
+      font-size: 18px !important
+    }
+
+    .xlarge {
+      font-size: 24px !important
+    }
+
+    .xxlarge {
+      font-size: 36px !important
+    }
+
+    .xxxlarge {
+      font-size: 48px !important
+    }
+
+    .jumbo {
+      font-size: 64px !important
+    }
+
+    .padding {
+      padding: 8px 16px !important
+    }
+
+    .padding-large {
+      padding: 12px 24px !important
+    }
+
+    .padding-16 {
+      padding-top: 16px !important;
+      padding-bottom: 16px !important
+    }
+
+    .padding-24 {
+      padding-top: 24px !important;
+      padding-bottom: 24px !important
+    }
+
+    .padding-32 {
+      padding-top: 32px !important;
+      padding-bottom: 32px !important
+    }
+
+    .padding-48 {
+      padding-top: 48px !important;
+      padding-bottom: 48px !important
+    }
+
+    .padding-64 {
+      padding-top: 64px !important;
+      padding-bottom: 64px !important
+    }
+
+    .padding-header {
+      padding-top: 64px !important;
+      padding-bottom: 24px !important;
+    }
 
 button, label, input, select {
   /*display: block;*/

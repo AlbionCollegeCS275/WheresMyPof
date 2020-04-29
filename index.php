@@ -42,10 +42,14 @@
       <p style="text-align:left">This page was developed by Albion College students in a Software Development Class. </p>
     </div>
 
-    <div class="column">
-      <h2>Side Column</h2>
-      <p>This is where the side column content will be.</p>
-    </div>
+  <div class="column">
+    <h2>Side Column</h2>
+    <ul>
+      <li><a href="HowToUseStudents.html">How to for students</a> </li>
+      <li><a href="HowToUseFaculty.html">How to for faculty</a></li>
+      <li><a href="ProjectOverview.html">Project Overview</a></li>
+    </ul>
+
   </div>
 
   <!-- Footer -->

@@ -46,6 +46,7 @@
     <ul>
       <li><a href="HowToUseStudents.html">How to for students</a> </li>
       <li><a href="HowToUseFaculty.html">How to for faculty</a></li>
+      <li><a href="Project Overview">Project Overview</a></li>
     </ul>
 
   </div>

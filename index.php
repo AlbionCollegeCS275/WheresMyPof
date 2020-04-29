@@ -30,30 +30,30 @@
     <a class="albion-purple hover-albion-gold navbar" href="Professor and Class Form.html">Professor Entry Form</a>
     <a class="albion-purple hover-albion-gold navbar" href="verification.php">Verify Email</a>
   </div>
-  <div class="albion-text-purple row">
-    <div class="column">
-      <h2>How To:</h2>
-      <p>If you're looking for a professor's office hours, click the <b>Search for a Professor</b> link.</p>
-      <p>If you are a professor looking to add your schedule information, click the <b>Professor Entry Form</b> link.</p>
+  <div class="padding">
+    <div class="albion-text-purple row">
+      <div class="column">
+        <h2>Welcome!</h2>
+        <p style="text-align:left">This page was developed by Albion College students in a Software Development Class. </p>
+      </div>
+      <div class="column">
+        <h2>How To:</h2>
+        <p>If you're looking for a professor's office hours, click the <b>Search for a Professor</b> link.</p>
+        <p>If you are a professor looking to add your schedule information, click the <b>Professor Entry Form</b> link.</p>
+      </div>
+      <div class="column">
+        <h2>Need Help?</h2>
+        <ul class="list">
+          <li><a class="albion-text-gold hover-opacity" href="HowToUseStudents.html">For students</a></li>
+          <li><a class="albion-text-gold hover-opacity" href="HowToUseFaculty.html">For faculty</a></li>
+          <li><a class="albion-text-gold hover-opacity" href="ProjectOverview.html">Project Overview</a></li>
+        </ul>
+      </div>
     </div>
-
-    <div class="column">
-      <h2>Welcome!</h2>
-      <p style="text-align:left">This page was developed by Albion College students in a Software Development Class. </p>
-    </div>
-
-  <div class="column">
-    <h2>Side Column</h2>
-    <ul>
-      <li><a href="HowToUseStudents.html">How to for students</a> </li>
-      <li><a href="HowToUseFaculty.html">How to for faculty</a></li>
-      <li><a href="ProjectOverview.html">Project Overview</a></li>
-    </ul>
-
   </div>
 
   <!-- Footer -->
-  <footer>
+  <footer class="padding-footer">
     <div>
       <a href="https://www.facebook.com/"><i class="albion-text-purple xlarge fab fa-facebook-f hover-opacity"></i></a>
       <a href="https://instagram.com/"><i class="albion-text-purple xlarge fab fa-instagram hover-opacity"></i></a>
@@ -63,7 +63,7 @@
       <a href="https://www.linkedin.com/in/"><i class="albion-text-purple xlarge fab fa-linkedin hover-opacity"></i></a>
     </div>
     <p class="albion-text-purple" id="copyright"></p>
-    <p><a class="hover-opacity" href="tos.html">Terms of Service</a> - <a class="hover-opacity" href="privacy.html">Privacy Policy</a></p>
+    <p><a class="albion-text-gold hover-opacity" href="tos.html">Terms of Service</a> - <a class="albion-text-gold hover-opacity" href="privacy.html">Privacy Policy</a></p>
   </footer>
 
   <script>
